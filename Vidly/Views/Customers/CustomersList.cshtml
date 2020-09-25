@@ -1,13 +1,28 @@
-﻿@model Vidly.ViewModels.RandomMovieViewModel
-@{
-    ViewBag.Title = "View";
+﻿@model IEnumerable<Vidly.Models.Customers>
+@{  ViewBag.Title = "View";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<ul>
-    @foreach (var customer in Model.Customers)
+<h2> Vidly Customers</h2>
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>
+            Customer
+        </th>
+        <th>
+            DiscountRate
+        </th>
+    </tr>
+    @foreach (var customer in Model)
     {
-    <li>@Html.ActionLink(@customer.Name, "CustomerDetails", "Customers", new { id = customer.Id }, null)</li>
-    }
-</ul>
+        <tr>
+            <td>
+                @Html.ActionLink(customer.Name, "CustomerDetails", "Customers", new { id = customer.Id }, null)
+            </td>
+            <td>
+                @customer.MemberShipType.DiscountRate
+            </td>
+        </tr>
 
+    }
+</table>
