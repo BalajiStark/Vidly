@@ -137,8 +137,21 @@
     <Compile Include="Migrations\202009251714373_InitialModel.designer.cs">
       <DependentUpon>202009251714373_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009251758296_AddIsSubscribed.cs" />
+    <Compile Include="Migrations\202009251758296_AddIsSubscribed.designer.cs">
+      <DependentUpon>202009251758296_AddIsSubscribed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009251803067_AddMemberShipType.cs" />
+    <Compile Include="Migrations\202009251803067_AddMemberShipType.designer.cs">
+      <DependentUpon>202009251803067_AddMemberShipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009251811350_PopulateMemberShipType.cs" />
+    <Compile Include="Migrations\202009251811350_PopulateMemberShipType.designer.cs">
+      <DependentUpon>202009251811350_PopulateMemberShipType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customers.cs" />
+    <Compile Include="Models\MemberShipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\MyDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -203,6 +216,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202009251714373_InitialModel.resx">
       <DependentUpon>202009251714373_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009251758296_AddIsSubscribed.resx">
+      <DependentUpon>202009251758296_AddIsSubscribed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009251803067_AddMemberShipType.resx">
+      <DependentUpon>202009251803067_AddMemberShipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009251811350_PopulateMemberShipType.resx">
+      <DependentUpon>202009251811350_PopulateMemberShipType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
