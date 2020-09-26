@@ -10,7 +10,7 @@
             Customer
         </th>
         <th>
-            DiscountRate
+            Name
         </th>
     </tr>
     @foreach (var customer in Model)
@@ -20,7 +20,7 @@
                 @Html.ActionLink(customer.Name, "CustomerDetails", "Customers", new { id = customer.Id }, null)
             </td>
             <td>
-                @customer.MemberShipType.DiscountRate
+                @customer.MemberShipType.Name
             </td>
         </tr>
 

@@ -149,6 +149,14 @@
     <Compile Include="Migrations\202009251811350_PopulateMemberShipType.designer.cs">
       <DependentUpon>202009251811350_PopulateMemberShipType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009260703477_AddNameinMembership.cs" />
+    <Compile Include="Migrations\202009260703477_AddNameinMembership.designer.cs">
+      <DependentUpon>202009260703477_AddNameinMembership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009260707073_UpdateMembershipName.cs" />
+    <Compile Include="Migrations\202009260707073_UpdateMembershipName.designer.cs">
+      <DependentUpon>202009260707073_UpdateMembershipName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customers.cs" />
     <Compile Include="Models\MemberShipType.cs" />
@@ -225,6 +233,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009251811350_PopulateMemberShipType.resx">
       <DependentUpon>202009251811350_PopulateMemberShipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009260703477_AddNameinMembership.resx">
+      <DependentUpon>202009260703477_AddNameinMembership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009260707073_UpdateMembershipName.resx">
+      <DependentUpon>202009260707073_UpdateMembershipName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
