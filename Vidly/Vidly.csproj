@@ -165,8 +165,13 @@
     <Compile Include="Migrations\202009260727556_AddDOBnullable.designer.cs">
       <DependentUpon>202009260727556_AddDOBnullable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009260800247_AddGenre.cs" />
+    <Compile Include="Migrations\202009260800247_AddGenre.designer.cs">
+      <DependentUpon>202009260800247_AddGenre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customers.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\MemberShipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\MyDbContext.cs" />
@@ -253,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009260727556_AddDOBnullable.resx">
       <DependentUpon>202009260727556_AddDOBnullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009260800247_AddGenre.resx">
+      <DependentUpon>202009260800247_AddGenre.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
