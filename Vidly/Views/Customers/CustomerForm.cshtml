@@ -17,13 +17,13 @@
     </div>
     <div class='form-group'>
         @Html.LabelFor(m => m.Customers.MemberShipType)
-        @Html.DropDownListFor(m => m.Customers.MemberShipTypeId, new SelectList(Model.MemberShipType,"Id","Name"),"Select Membership",
-       new { @class = "form-control"})
+        @Html.DropDownListFor(m => m.Customers.MemberShipTypeId, new SelectList(Model.MemberShipType, "Id", "Name"), "Select Membership",
+       new { @class = "form-control" })
     </div>
     <div class='checkbox'>
         @Html.CheckBoxFor(m => m.Customers.IsSubscribed)	Subscribed to Membership?
     </div>
-
-    <button type='submit' class=“btn btn-primary”>Save</button>
+    @Html.HiddenFor(m => m.Customers.Id)
+    <button type='submit' class="btn btn-primary">Save</button>
 }
 
