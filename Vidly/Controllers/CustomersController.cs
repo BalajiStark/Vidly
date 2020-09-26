@@ -18,6 +18,16 @@ namespace Vidly.Controllers
         {
             _context = new MyDbContext();
         }
+
+        public ActionResult New()
+        {
+            var memberShipTypes = _context.memberShipTypes.ToList();
+            var viewmodel = new CustomerFormViewModel
+            {
+                MemberShipType = memberShipTypes
+            };
+            return View(viewmodel);
+        }
         public ActionResult CustomersList()
         {
             var customers = _context.customers.Include(c => c.MemberShipType).ToList();
