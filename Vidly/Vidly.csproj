@@ -157,6 +157,14 @@
     <Compile Include="Migrations\202009260707073_UpdateMembershipName.designer.cs">
       <DependentUpon>202009260707073_UpdateMembershipName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009260725353_AddDOB.cs" />
+    <Compile Include="Migrations\202009260725353_AddDOB.designer.cs">
+      <DependentUpon>202009260725353_AddDOB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009260727556_AddDOBnullable.cs" />
+    <Compile Include="Migrations\202009260727556_AddDOBnullable.designer.cs">
+      <DependentUpon>202009260727556_AddDOBnullable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customers.cs" />
     <Compile Include="Models\MemberShipType.cs" />
@@ -239,6 +247,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009260707073_UpdateMembershipName.resx">
       <DependentUpon>202009260707073_UpdateMembershipName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009260725353_AddDOB.resx">
+      <DependentUpon>202009260725353_AddDOB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009260727556_AddDOBnullable.resx">
+      <DependentUpon>202009260727556_AddDOBnullable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

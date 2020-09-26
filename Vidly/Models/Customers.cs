@@ -12,5 +12,6 @@ namespace Vidly.Models
         public bool IsSubscribed { get; set; }
         public MemberShipType MemberShipType { get; set; }
         public byte MemberShipTypeId { get; set; }
+        public DateTime? DateofBirth {get; set;}
     }
 }
