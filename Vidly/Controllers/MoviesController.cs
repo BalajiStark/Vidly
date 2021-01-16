@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using System.Web.UI;
 using Vidly.Models;
 using System.Data.Entity;
+using Vidly.ViewModels;
 
 namespace Vidly.Controllers
 {
@@ -17,6 +18,16 @@ namespace Vidly.Controllers
         public MoviesController()
         {
             _context = new MyDbContext();
+        }
+
+        public ActionResult MovieForm()
+        {
+            var genres = _context.genres.ToList();
+            var viewmodel = new MovieFormViewModel
+            {
+                Genres = genres
+            };
+            return View(viewmodel);
         }
         public ActionResult Random()
         {
